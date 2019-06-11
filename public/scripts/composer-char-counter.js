@@ -7,10 +7,11 @@ console.log('Successs!');
 
 $('.new-tweet form textarea').on('input', function(data){
     console.log(data);
-    console.log(this); 
-    console.log($(this).val()); 
-    console.log(($(this).val()).length); 
     console.log(140 - ($(this).val()).length); 
+    console.log($(this).parent()); 
+    const counter = $(this).parent().find('.counter')
+    counter.text(140 - ($(this).val()).length);
+    (($(this).val()).length > 140 ) ? counter.addClass("red") :  counter.removeClass('red');
 })
 
 });
