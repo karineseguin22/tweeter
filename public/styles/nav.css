@@ -1,0 +1,13 @@
+#nav-bar .logo {
+    width: 80px;
+    height: 80px;
+}
+
+#nav-bar .header {
+    background: #00a087;
+    color: white;
+    font-size: 24px;
+    height: 80px; 
+    padding-left:2em;
+    padding-right: 2em; 
+  }
