@@ -7,6 +7,7 @@ console.log('Successs!');
 
 $('.new-tweet form textarea').on('input', function(data){
     console.log(data);
+    console.log(this); 
 })
 
 });
