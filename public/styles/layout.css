@@ -29,6 +29,8 @@ body {
    width: 450px; 
    align-content: center; 
    background: white;
+   top: 40px; 
    margin: 0 auto; 
+   margin-top: -16px;
 
 }
