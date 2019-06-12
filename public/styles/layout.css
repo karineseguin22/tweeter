@@ -49,7 +49,11 @@ body {
   margin-top: 50px; 
   border-radius: 2%; 
   border-style:solid; 
-  border-color: gainsboro; 
+  border-color: gainsboro;
+  opacity: 0.6; 
+}
+.Tweet-Box:hover{
+  opacity:1
 }
 
 .red{
