@@ -41,34 +41,45 @@
 
     <!-- Page-specific (main) content here -->
     <main class="container">
+      <!-- New Tweet Section -->
     <section class="new-tweet">
-      <h2>Compose Tweet</h2>
-      <form method="POST" action="/tweets/">
-        <textarea name="text" placeholder="What are you humming about?"></textarea>
-        <input type="submit" value="Tweet">
-        <span class="counter">140</span>
-      </form>
-    </section>>
-      <p>***</p>
+        <article class = "background">
+            <header>
+              <h2>Compose Tweet</h2>
+            </header>
+            <body>
+              <form method="POST" action="/tweets/">
+                <textarea name="text" placeholder="What are you humming about?"></textarea>
+              </body>
+              <footer>
+                <input type="submit" value="Tweet">
+                <span class="counter">140</span>
+              </footer>
+              </form>
+          </article>
+      </section>
+      
+    <!-- Tweet list Section -->
+      <section id="Tweet-List">
+        <article class="Tweet-Box">
+            <header class="headerheight">
+                <h2 class="name">
+                  <img class="logo" src="/images/bird.png">
+                  <span>Karine Séguin</span>
+                </h2>
+                <h3 class="aname">
+                  @bob
+                </h3>
+            </header>
+              <p>Little tweet here</p>
+            <footer class="border">
+                <p class="nomargin">Ten days ago</p>
+            </footer>
+        </article>
+    </section>
+
+    <!-- To see how form looks like when scrolling down -->
       <p>***</p> <p>***</p> <p>***</p>
-      <p>***</p>
-      <p>***</p>
-      <p>***</p>
-      <p>***</p>
-      <p>***</p>
-      <p>***</p>
-      <p>***</p>
-      <p>***</p>
-      <p>***</p><p>***</p>
-      <p>***</p>
-      <p>***</p>
-      <p>***</p>
-      <p>***</p>
-      <p>***</p>
-      <p>***</p>
-      <p>***</p>
-      <p>***</p>
-      <p>***</p>
       <p>***</p>
       <p>***</p>
       <p>***</p>

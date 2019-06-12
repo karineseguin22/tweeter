@@ -35,6 +35,67 @@ body {
 
 }
 
+.background {
+  background: gray;
+  width: 300px; 
+  align-content: center; 
+  margin: auto; 
+  border-radius: 2%; 
+}
+
+.Tweet-Box{
+  width: 300px; 
+  margin: auto;
+  margin-top: 50px; 
+  border-radius: 2%; 
+  border-style:solid; 
+  border-color: gainsboro; 
+}
+
 .red{
   color: red;
+}
+
+.new-tweet{
+  align-content: center;  
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+}
+
+.font {
+  color: black;  
+}
+
+.top {
+  width: 300px;
+}
+
+.border{
+  border-top: solid gainsboro;   
+}
+
+.headerheight{
+  background: bisque; 
+  border-radius: 2%;
+  display: flex; 
+  flex: auto; 
+}
+
+.name{
+  margin: 0px; 
+}
+.aname{
+margin-left: 30px; 
+}
+
+.nomargin{
+  margin: 0px; 
+}
+
+.mousehover{
+  border-style: solid;
+  border-color: black; 
 }
