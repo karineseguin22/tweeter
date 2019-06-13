@@ -34,17 +34,17 @@ const tweetData = {
 
         let $header = $('<header>').addClass('headerheight');
 
-        let $topelements = $('<h2>').addClass('name');
+        let $topelements = $('<h2>').addClass(tweet.user.name);
 
         let $img = $('<img>').addClass('logo').attr('src',tweet.user.avatars.small);
 
-        let $name = $('<span>').text('Karine Séguin');
+        let $name = $('<span>').text(tweet.user.name);
 
-        let $handle = $('<h3>').addClass('aname').text('@bob');
+        let $handle = $('<h3>').addClass('aname').text(tweet.user.handle);
 
         let $main = $('<main>');
 ''
-        let $text = $('<p>').text("hello");
+        let $text = $('<p>').text(tweet.content.text);
 
         let $footer = $('<footer>').addClass('border');
 
