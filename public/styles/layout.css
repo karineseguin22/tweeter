@@ -53,7 +53,12 @@ body {
   opacity: 0.6; 
 }
 .Tweet-Box:hover{
-  opacity:1
+  opacity:1; 
+
+}
+
+.icon:hover{
+  fill: #DA4567
 }
 
 .red{
@@ -78,7 +83,7 @@ body {
 }
 
 .border{
-  border-top: solid gainsboro;   
+  border-top: solid gainsboro;  
 }
 
 .headerheight{
@@ -97,9 +102,4 @@ margin-left: 30px;
 
 .nomargin{
   margin: 0px; 
-}
-
-.mousehover{
-  border-style: solid;
-  border-color: black; 
 }
