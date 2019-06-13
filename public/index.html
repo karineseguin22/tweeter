@@ -16,6 +16,21 @@
     <!-- External JS -->
     <script type="text/javascript" src="/vendor/jquery-2.2.3.min.js"></script>
 
+    <!-- EXAMPLE--- REMOVE AFTER -->
+    <!-- <script>
+        $(function() {
+          var $button = $('#load-more-posts');
+          $button.on('click', function () {
+            console.log('Button clicked, performing ajax call...');
+            $.ajax('more-posts.html', { method: 'GET' })
+            .then(function (morePostsHtml) {
+              console.log('Success: ', morePostsHtml);
+              $button.replaceWith(morePostsHtml);
+            });
+          });
+        });
+        </script> --> 
+
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/app.js"></script>
     <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
@@ -43,20 +58,18 @@
     <main class="container">
       <!-- New Tweet Section -->
     <section class="new-tweet">
-        <article class = "background">
-            <header>
-              <h2>Compose Tweet</h2>
-            </header>
-            <body>
-              <form method="POST" action="/tweets/">
-                <textarea name="text" placeholder="What are you humming about?"></textarea>
-              </body>
-              <footer>
-                <input type="submit" value="Tweet">
-                <span class="counter">140</span>
-              </footer>
-              </form>
-          </article>
+      <article class = "background">
+        <header>
+          <h2>Compose Tweet</h2>
+        </header>
+          <form id="tweetform" method="POST" action="/tweets/">
+            <textarea name="text" placeholder="What are you humming about?"></textarea>
+            <footer>
+              <input type="submit" value="Tweet">
+              <span class="counter">140</span>
+            </footer>
+          </form>
+        </article>
       </section>
       
     <!-- Tweet list Section -->

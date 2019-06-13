@@ -94,13 +94,14 @@ $(document).ready(function(){
     //create a render function called renderTweets -> takes in an ARRAY of tweet objects AND 
 //append each one to the tweets-container
 function renderTweets(tweets){
-//loop though tweets (array)
-for (let user of tweets){
-//call createTweetElement for each Tweet
-var $tweet = createTweetElement(user); 
-$('#Tweet-List').append($tweet);
-//takes return value and appends to the tweets container
-}
+    //loop though tweets (array)
+    //var sortedTweets = tweets.sort((a,b)=> b.created_at - a.created_at)
+    for (let tweet of tweets){
+    //call createTweetElement for each Tweet
+    var $tweet = createTweetElement(tweet); 
+        $('#Tweet-List').prepend($tweet);
+    //takes return value and appends to the tweets container
+    }
 
 }
 
@@ -112,5 +113,34 @@ $('#Tweet-List').append($tweet);
 //console.log($tweet); // to see what it looks like
 //$('#Tweet-List').append($tweet); // to add it to the page so we can make sure it's got all the right elements, classes, etc.
 
+// Reusable Ajax request
+const request = (options, cb) => {
+    $.ajax(options)
+      .done(response => cb(response))
+      .fail(err => console.log(`Error: ${err}`))
+      .always(() => console.log('Request completed.'));
+};
+
+$('#tweetform').on('submit',function(event){
+    event.preventDefault();
+    const reqOptions = {
+      url: '/tweets',
+      method: 'POST',
+      data:$(this).serialize(),  
+    };
+
+    request(reqOptions, tweet => {
+        
+      renderTweets([tweet]);  
+      console.log('tweet',tweet);
+    });
+
+  }); 
+
+
 renderTweets(data); 
 }); 
+
+
+    
+      
