@@ -67,7 +67,7 @@ body {
 
 .new-tweet{
   align-content: center; 
-  style  
+  display: none;  
 }
 
 .logo {

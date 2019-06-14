@@ -138,8 +138,8 @@ loadTweets();
  }); 
 
  //autoselect text when click compose button 
- if (Drupal.jsEnabled){
-   $('')
- }
+$('button').click(function(){
+  $("#area").select();
+});
 
 }); 
