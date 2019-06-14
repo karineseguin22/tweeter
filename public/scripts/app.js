@@ -73,14 +73,26 @@ function renderTweets(tweets){
 // Reusable Ajax request
 //makes a twitter post 
 const request = (options, cb) => {
+
+    /*Validate if tweet content
+    1) not too long or not present
+    2) form should not be cleared
+    3)the form should not submit 
+    */
+   
     $.ajax(options)
       .done(response => cb(response))
       .fail(err => console.log(`Error: ${err}`))
       .always(() => console.log('Request completed.'));
 };
 
+
 $('#tweetform').on('submit',function(event){
     event.preventDefault();
+
+    const text = $('#tweetform').find('textarea[name=text]').val(); //return text from textarea
+   if (text.length <= 140 && text.length > 0) {
+
     const reqOptions = {
       url: '/tweets',
       method: 'POST',
@@ -89,10 +101,16 @@ $('#tweetform').on('submit',function(event){
 
     request(reqOptions, tweet => {
         
-      renderTweets([tweet]);  
+      renderTweets([tweet]);
+      console.log('text', text); 
+      $('#tweetform').find('textarea[name=text]').val('');  
     });
+   }else{
+    alert("Text should be between 1-140 characters");
+   }
 
   }); 
+
 
 
 renderTweets(data); 
@@ -108,7 +126,6 @@ const loadTweets = () => {
         dataType: 'json', 
     }
     request(reqOptions, function(response) {
-        console.log('Response',response); 
         renderTweets(response); 
     });
 };
