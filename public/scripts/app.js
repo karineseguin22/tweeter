@@ -137,4 +137,9 @@ loadTweets();
   $(".new-tweet").slideToggle("slow")
  }); 
 
+ //autoselect text when click compose button 
+ if (Drupal.jsEnabled){
+   $('')
+ }
+
 }); 
