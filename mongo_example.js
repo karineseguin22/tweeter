@@ -14,15 +14,18 @@ MongoClient.connect(MONGODB_URI, (err, db) => {
     console.log(`Connected to mongodb: ${MONGODB_URI}`); 
 
     // ===> Let's "get all the "tweeters". In Mongo-speak, we "find" them.
-    db.collection("tweets").find({}, (err, result) => {
+    db.collection("tweets").find({}, (err, results) => {
         // Lazy error handling:
         if (err) throw err;
     
-       // ==> We can iterste on the cursor to get the results, one at a time:
-        console.log("for each item yeilded by the cursor");
-        result.each((err, item) => console.log(" ", item)); 
-
-        //This is the end..
-    db.close(); 
+       // ==> We could instead just slurp the items into an array:
+    results.toArray((err, resultsArray) => {
+        if (err) throw err;
+  
+        console.log("results.toArray:", resultsArray);
       });
+
+     db.close(); 
+      });
+     
 }); 
