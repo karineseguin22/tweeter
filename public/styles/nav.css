@@ -11,3 +11,18 @@
     padding-left:2em;
     padding-right: 2em; 
   }
+
+.styled-button {
+    background: rgb(202, 202, 202);  
+    margin-left: auto;
+    height: 2.3em;
+    width: 5.5em;
+    border-style: solid;
+    border-color: black;
+    opacity:0.6; 
+    
+}
+
+.styled-button:hover{
+    opacity:1; 
+  }
