@@ -132,4 +132,9 @@ const loadTweets = () => {
       
 loadTweets(); 
 
+//New text box slide up or down when presses
+ $("button").click(function() {
+  $(".new-tweet").slideToggle("slow")
+ }); 
+
 }); 
