@@ -38,10 +38,17 @@ $(document).ready(function(){
 
         let $daysposted = $('<p>').addClass('nomargin').text('Ten days ago');
 
+        let $flag = $('<i>').addClass('fa fa-flag')
+        
+        let $retweet = $('<i>').addClass('fa fa-retweet')
+
+        let $heart = $('<i>').addClass('fa fa-heart')
+  
+
         $topelements.append($img).append($name);
         $header.append($topelements).append($handle); 
         $main.append($text); 
-        $footer.append($daysposted); 
+        $footer.append($daysposted).append($flag).append($retweet).append($heart); 
         $article.append($header).append($main).append($footer); 
 
         return $article;
