@@ -99,7 +99,7 @@ $('#tweetform').on('submit',function(event){
 
     const text = $('#tweetform').find('textarea[name=text]').val(); //return text from textarea
    if (text.length <= 140 && text.length > 0) {
-
+    $('#errormessage').slideUp("slow")//to hide error if it was previously displayed 
     const reqOptions = {
       url: '/tweets',
       method: 'POST',
