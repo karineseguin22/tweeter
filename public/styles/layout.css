@@ -106,3 +106,9 @@ margin-left: 30px;
   margin: 0px; 
   margin-right: 51%;
 }
+
+.textarea{
+display: flex; 
+width: 99%;
+margin-bottom: 9% 
+}
