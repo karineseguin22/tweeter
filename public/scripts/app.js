@@ -113,7 +113,7 @@ $('#tweetform').on('submit',function(event){
       $('#tweetform').find('textarea[name=text]').val('');  
     });
    }else{
-    alert("Text should be between 1-140 characters");
+    $('#errormessage').slideDown("slow")//error message 
    }
 
   }); 
