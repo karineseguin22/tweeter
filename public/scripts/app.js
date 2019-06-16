@@ -38,11 +38,11 @@ $(document).ready(function(){
 
         let $daysposted = $('<p>').addClass('nomargin').text('Ten days ago');
 
-        let $flag = $('<i>').addClass('fa fa-flag')
+        let $flag = $('<i>').addClass('fa fa-flag').addClass('hiddenIcons');
         
-        let $retweet = $('<i>').addClass('fa fa-retweet')
+        let $retweet = $('<i>').addClass('fa fa-retweet').addClass('hiddenIcons');
 
-        let $heart = $('<i>').addClass('fa fa-heart')
+        let $heart = $('<i>').addClass('fa fa-heart').addClass('hiddenIcons');
   
 
         $topelements.append($img).append($name);
@@ -148,5 +148,8 @@ loadTweets();
 $('button').click(function(){
   $("#area").select();
 });
+
+//remove hidden items on hover
+//$(".Tweet-Box:h")
 
 }); 

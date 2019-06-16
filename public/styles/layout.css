@@ -52,13 +52,12 @@ body {
   border-color: gainsboro;
   opacity: 0.6; 
 }
-.Tweet-Box:hover{
-  opacity:1; 
-
+.Tweet-Box:hover {
+  opacity:1;
 }
-
-.icon:hover{
-  fill: #DA4567
+.Tweet-Box:hover .hiddenIcons {
+  display: block; 
+  opacity:1;
 }
 
 .red{
@@ -114,5 +113,9 @@ margin-bottom: 9%
 }
 
 .hiddenError{
+  display: none; 
+}
+
+.hiddenIcons{
   display: none; 
 }
