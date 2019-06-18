@@ -51,10 +51,10 @@
         </header>
           <form id="tweetform" method="POST" action="/tweets/">
             <textarea id="area" class="textarea" name="text" placeholder="What are you humming about?"></textarea>
-            <footer>
+            <footer class="display-flex">
               <p id="errormessage" class="hiddenError">Text should be between 1-140 characters.</p>
               <input type="submit" value="Tweet">
-              <span class="counter">140</span>
+              <span class="counter left-margin">140</span>
             </footer>
           </form>
         </article>
