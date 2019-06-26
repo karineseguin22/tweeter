@@ -18,4 +18,4 @@ This repository is the starter code for the project: Students will fork and clon
 
 ## Screenshots
 
--https://github.com/karineseguin22/tweeter/blob/master/docs/tweets-and-tweet-box.png?raw=true
+![Tweet-box and tweets](https://github.com/karineseguin22/tweeter/blob/master/docs/tweets-and-tweet-box.png?raw=true)
