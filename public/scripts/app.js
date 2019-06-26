@@ -15,8 +15,7 @@ $(document).ready(function(){
   
   const createTweetElement = tweet => { //creates ind tweet element
         
-    let $article = $('<article>')
-    .addClass('Tweet-Box');
+    let $article = $('<article>').addClass('Tweet-Box');
 
     let $header = $('<header>').addClass('headerheight');
 
@@ -24,9 +23,9 @@ $(document).ready(function(){
 
     let $img = $('<img>').addClass('logo').attr('src',tweet.user.avatars.small);
 
-    let $name = $('<span>').text(tweet.user.name);
+    let $name = $('<span>').text(tweet.user.name).addClass('is-size-for-name');
 
-    let $handle = $('<h3>').addClass('aname').text(tweet.user.handle);
+    let $handle = $('<h3>').addClass('is-margin-for-handle').text(tweet.user.handle).addClass('is-size-for-name');
 
     let $main = $('<main>');
   

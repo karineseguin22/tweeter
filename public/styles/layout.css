@@ -96,8 +96,8 @@ body {
 .name{
   margin: 0px; 
 }
-.aname{
-margin-left: 30px; 
+.is-margin-for-handle{ 
+margin-left: auto; 
 }
 
 .nomargin{
@@ -125,4 +125,8 @@ margin-bottom: 9%;
 }
 .display-flex{
   display: flex; 
+}
+
+.is-size-for-name{
+  font-size: initial; 
 }
