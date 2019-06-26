@@ -10,6 +10,15 @@
 
 $(document).ready(function(){ 
 
+  const getDate = function (){ 
+    const fullDate =new Date();
+    const dd = String(fullDate.getDate()).padStart(2, '0');
+    const mm =  String((fullDate.getMonth())+ 1).padStart(2, '0'); 
+    const yyyy =  String(fullDate.getFullYear()); 
+    const date = mm + '/' + dd + '/' + yyyy; 
+    return date;
+  }
+
     // Test / driver code (temporary). Eventually will get this from the server.
     const data = [
  
@@ -36,7 +45,7 @@ $(document).ready(function(){
 
         let $footer = $('<footer>').addClass('border');
 
-        let $daysposted = $('<p>').addClass('nomargin').text('Ten days ago');
+        let $daysposted = $('<p>').addClass('nomargin').text(getDate());
 
         let $flag = $('<i>').addClass('fa fa-flag').addClass('hiddenIcons');
         
