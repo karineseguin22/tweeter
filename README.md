@@ -15,6 +15,10 @@ This repository is the starter code for the project: Students will fork and clon
 
 - Express
 - Node 5.10.x or above
+- Body-parser 1.19.x
+- Chance 1.0.x
+- Md5 2.2.x
+- Mongodb 2.2.x 
 
 ## Screenshots
 
