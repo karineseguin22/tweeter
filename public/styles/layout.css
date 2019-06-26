@@ -29,10 +29,9 @@ body {
    width: 450px; 
    align-content: center; 
    background: white;
-   top: 40px; 
-   margin: 0 auto; 
-   margin-top: -16px;
-
+   margin: auto; 
+   flex-direction: column;
+   display: flex;
 }
 
 .background {
@@ -66,7 +65,7 @@ body {
 
 .new-tweet{
   align-content: center; 
-  display: none;  
+  display: none; 
 }
 
 .logo {
