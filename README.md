@@ -20,4 +20,4 @@ Tweeter is a simple, single-page Twitter clone. You can post your favourite quot
 
 ## Screenshots
 
-![Tweet-box and tweets](https://github.com/karineseguin22/tweeter/blob/master/docs/tweets-and-tweet-box.png?raw=true)
+![Tweet-box and tweets](https://github.com/karineseguin22/tweeter/blob/master/docs/Tweet-box-and-tweets.png?raw=true)
